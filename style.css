@@ -1,0 +1,16 @@
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+}
+#header{
+    width: 100% ;
+    height: 100vh
+    background-image: url(image/px.jpg);
+    background-size: cover;
+    background-position: center;
+}
