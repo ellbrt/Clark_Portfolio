@@ -1,16 +1,320 @@
-{
+
+html{
+    scroll-behavior: smooth;
+}
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
 }
-body{
+.hero-page{
+    height: 100vh;
     background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
 }
-#header{
-    width: 100% ;
-    height: 100vh
-    background-image: url(image/px.jpg);
-    background-size: cover;
-    background-position: center;
+.nav{
+    background-color: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    justify-content: space-between;  
+    
 }
+.nav .logo{
+    width: 5%;
+    cursor: pointer;
+    float: left;
+    margin-left: 5%;
+}
+.ul{
+    margin-top: 1%;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+    letter-spacing: 1px;
+    margin: 0 50px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: .4s ease;
+}
+
+ul li a:hover{
+    color: rgb(209, 30, 17);
+}
+.add {
+    border-bottom: 2px solid white;
+    margin-top: 50px; 
+    padding-bottom: 20px; 
+}
+
+.introduction {
+    position: absolute;
+    right: 60rem;
+    margin-top: 15%;
+    margin-left: 20px; 
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+h4 {
+    margin-top: 10%;
+    font-size: 40px;
+    color: white;
+    margin-left: 20px; 
+}
+
+h5 {
+    margin-top: 10%;
+    font-size: 20px;
+    color: white;
+    margin-left: 20px; 
+}
+.profile {
+    width: 30%;         
+    margin-top: 2%;     
+    margin-right: 5%;   
+    float: right;       
+    cursor: pointer;   
+    transition: all 0.3s ease; 
+}
+
+#section2 {
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    padding: 100px 20px; 
+}
+
+#section2 h1 {
+    text-align: center; 
+    color: white; 
+    font-size: 25px; 
+    margin-bottom: 40px; 
+}
+
+.shapes {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.shape {
+    background-color: rgb(68, 67, 67); 
+    border-radius: 10px; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+    text-align: center; 
+    padding: 30px; 
+    width: 300px; 
+    height: 300px; 
+}
+
+.icon {
+    font-size: 50px; 
+    color: #007bff; 
+    margin-bottom: 20px; 
+}
+
+.web {
+    font-size: 20px;
+    color: white; 
+    margin-bottom: 15px;
+}
+
+p {
+    color: white; 
+    line-height: 1.8; 
+    font-size: 16px;
+}
+.icon i {
+    color: white; 
+    font-size: 2em; 
+}
+.checked {
+    color: white; 
+}
+
+.Hobbies {
+    padding: 30px;
+    height: 100vh;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hobbie-content {
+    margin-bottom: 20px;
+}
+
+.hobbie-content .hobby {
+    font-size: 70px;
+    font-weight: 200;
+    color: white;  
+}
+
+.hobbies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+    flex-wrap: wrap;  
+    text-align: center;
+    width: 100%;
+}
+
+.hobby-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 250px;  
+    margin-bottom: 30px;  
+}
+
+.hobby-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.hobby-item h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.hobby-item p {
+    font-size: 18px;
+    color: white;  
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.gallery {
+    text-align: center;
+    padding: 50px 0;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    width: 100%;
+}
+
+.photos h1 {
+    font-size: 36px;
+    color: white;
+}
+
+.png {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.imgs {
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.1);
+}
+
+.phto1, .phto2, .phto3, .phto4 {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    font-size: 14px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+
+.footer {
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    color: white;
+    padding: 20px 40px;
+    border-top: 3px solid white;
+}
+
+.contact_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+
+
+
+
+.socialmedia {
+    text-align: center;
+}
+
+.socialmedia p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+.socialmedia a img {
+    width: 30px; 
+    margin: 0 10px;
+    filter: grayscale(100%); 
+    transition: transform 0.3s, filter 0.3s;
+    color: white;
+}
+
+.socialmedia a img:hover {
+    transform: scale(1.2);
+    filter: grayscale(0); 
+}
+
+.contact-deets {
+    text-align: right;
+    font-size: 1px;
+    line-height: 1.6;
+}
+
+.contact-deets p {
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
